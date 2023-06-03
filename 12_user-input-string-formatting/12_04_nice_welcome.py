@@ -1,0 +1,11 @@
+# Ask the user to input their name. Then print a nice welcome message
+# that welcomes them personally to your script.
+# If a user enters more than one name, e.g. "firstname lastname",
+# then use only their first name to overstep some personal boundaries
+# in your welcome message.
+
+name = input("Input your name\n")
+if " " in name:
+    name = name[0:name.index(" ")]
+
+print(f"Welcome to this script, {name}")
